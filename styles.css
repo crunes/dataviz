@@ -143,9 +143,9 @@ p {
   font-family: 'Lato';
 }
 
-.highlight {
+.highlightpink {
   text-decoration: underline;
-  color: purple;
+  color: #d66982;
 }
 
 .source {
