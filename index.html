@@ -1,11 +1,115 @@
-<html>
+<!DOCTYPE HTML>
+
+<html lang="en">
+
     <head>
-        <title>Charmaine's Dataviz Demo</title>
+        <title>d a t a v i z</title>
+        <meta charset="utf-8" />
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,400;1,700&family=Playfair+Display&family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+    		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
         <link href="styles.css" rel="stylesheet"></style>
     </head>
+
     <body>
-        <h1>PPHA 30560: Data Visualization</h1>
-        <p>This is just a demo for hot-server.</p>
-        <p>Anotha one.</p>
+      <h1 class=highlightgreen> charmaine soriano runes </h1>
+
+      <div id="intro">
+        <h2>
+          I'm a designer, developer, and data journalist. I code for the
+          people.
+        </h2>
+      </div>
+
+      <br>
+
+      <p class="intro">
+        Welcome to my data visualization portfolio!
+        (Looking for a
+        <a href="https://crunes.github.io/scrolly-chivaxbot">scrollytelling
+        example</a>? I got you.)
+      </p>
+
+      <br>
+      <hr>
+      <br>
+
+      <!-- <div class='spacer'></div> -->
+
+      <div class="chart-container">
+          <h5>
+              Where today's 25-year-olds went to college, grouped by their
+              parents income
+          </h4>
+
+          <p class="caption">
+            About four in 10 students from the top 0.1 percent attend an Ivy League
+            or elite university, roughly equivalent to the share of students from
+            poor families who attend any two- or four-year college.
+          </p>
+
+          <svg width="850px" height="500px" id="stacked-bar-chart"></svg>
+
+          <div class='spacer'></div>
+
+          <p class="source">Source: The New York Times</p>
+      </div>
+
+      <br>
+      <hr>
+      <br>
+
+      <div class="chart-container">
+          <h5>
+            Millennials' fave throwbacks fade into obscurity
+          </h5>
+          <p class="caption">
+            Crowd-sourced data reveal that songs once popular with Millennials in
+            their early teen years have become more and more unfamiliar among younger
+            generations.
+          </p>
+
+          <br>
+          <br>
+
+          <svg width="850px" height="500px" id="multiple-line-chart"></svg>
+
+          <div class='spacer'></div>
+
+          <p class="source">Source: Pudding Viz</p>
+
+      </div>
+
+      <br>
+      <hr>
+      <br>
+
+      <div class="chart-container">
+          <h5>
+            The richer the school district, the higher the test scores
+          </h5>
+          <p class="caption">
+            The New York Times mapped out test scores for 3rd graders in
+            2,000 large school districts. Larger circles represent larger
+            districts.
+          </p>
+
+          <svg width="850px" height="500px" id="bubble-chart"></svg>
+          <!-- <div class='pop-up'></div> -->
+
+          <div class='spacer'></div>
+
+          <p class="source">Source:The New York Times</p>
+
+      </div>
+
     </body>
+
+    <script src="scripts/stacked-bar-chart.js"></script>
+    <script src="scripts/multiple-line-chart.js"></script>
+    <script src="scripts/bubble-chart.js"></script>
+
 </html>
