@@ -3,15 +3,18 @@
 <html lang="en">
 
     <head>
-        <title>d a t a v i z</title>
+        <title>Data Viz | Charmaine Runes</title>
         <meta charset="utf-8" />
     		<meta name="viewport" content="width=device-width, initial-scale=1">
+
     		<link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,400;1,700&family=Playfair+Display&family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
     		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
-        <script src="https://d3js.org/d3.v6.min.js"></script>
         <link href="styles.css" rel="stylesheet"></style>
+
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://unpkg.com/topojson@3"></script>
+        <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
     </head>
 
     <body>
@@ -31,7 +34,7 @@
       <p class="intro">
         Welcome to my data visualization portfolio!
         (Looking for a
-        <a href="https://crunes.github.io/scrolly-chivaxbot">scrollytelling
+        <a href="https://cookcounty-vaxdisparity.southsideweekly.com/">scrollytelling
         example</a>? I got you.)
       </p>
 
@@ -45,7 +48,7 @@
           <h5 class="hed">
             American health insurance by income in
             <span class=highlightpink>2020</span>
-          </h4>
+          </h5>
 
           <p class="caption">
             In 2020, a greater percent of previously uninsured people in the U.S.
@@ -140,9 +143,11 @@
 
     </body>
 
+    <script src="scripts/county-map.js"></script>
     <script src="scripts/stacked-bar-chart.js"></script>
     <script src="scripts/multiple-line-chart.js"></script>
     <script src="scripts/bubble-chart.js"></script>
     <script src="scripts/dancing-bar-chart.js"></script>
+
 
 </html>
